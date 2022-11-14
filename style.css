@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background: rgba(180, 180, 255, 0.266); */
+  background-image: linear-gradient(to top, #ece2ff 0%, #f9efff83 1%, #f1ebff 100%);
+  color: black;
+  font-family: Libre Baskerville;
+}
+
+#contactbtn {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  margin-left: 3%;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  padding: 1.2%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+#contactbtn:hover {
+  background: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+header h1 {
+  text-align: center;
+  padding: 2%;
+  background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1:after {
+  content: "";
+  position: absolute;
+  height: 1.7px;
+  width: 80%;
+  background-color: #00000023;
+  left: 10%;
+  top: 15%;
+  animation: animate 5s linear
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+        background: black;
+    }
+
+    25% {
+        background: rgba(0, 0, 0, 0.719);
+    }
+
+    50% {
+        width: 40%;
+        background: rgba(0, 0, 0, 0.452);
+    }
+
+    100% {
+        width: 80%;
+    }
+    
+}
+
+p {
+  color: rgb(151, 36, 36);
+}
+
+.lc {
+  padding-top: 3%;
+  text-align: center;
+}
+
+.lc button {
+  margin-top: 2%;
+  background: rgb(255, 255, 255);
+  color: white;
+  padding: 1%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.lc button:hover {
+  transform: scale(1.1);
+  border-color: rgb(187, 164, 29);
+  color: black;
+}
+
+img {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 7%;
+  transition: all 0.6s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+  margin-top: 10%;
+}
+
+#form {
+  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+  color: black;
+  font-family: serif;
+  padding: 4%;
+  margin-top: 10%;
+  box-shadow: 4px 4px 6px;
+}
+
+form {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 1%;
+  box-shadow: 5px 4px 8px white;
+}
+
+form h3 {
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  text-align: center;
+}
+
+section {
+  width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  all: unset;
+  background: white;
+  padding: 1.5%;
+  margin: 2%;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid rgb(146, 162, 255);
+}
+
+.click-event-form {
+  all: unset;
+  background: white;
+  padding: 1.5%;
+  margin: 2%;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid rgb(146, 162, 255);
+}
+
+.click-event-input {
+  background-image: linear-gradient(135deg, #1d3fd3 0%, #7a18dc 100%);
+  color: white;
+  opacity: 0.5;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+form button {
+  background-image: linear-gradient(to right, #8e57c9b7 0%, #0a043eb0 100%);
+  padding: 1.5% 10%;
+  border-radius: 7px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (min-width: 870px) {
+  form button {
+    padding: 1% 10%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  img {
+    width: 33%;
+    margin-top: 3%;
+  }
+
+  img:hover {
+    transform: scale(1);
+    margin-top: 3%;
+  }
+
+  h1:after {
+    top: 20%;
+  }
+
+  .lc {
+    padding-top: 2%;
+  }
+
+  #contactbtn {
+    padding: 0.5%;
+    top: 6%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #contactbtn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+    input {
+        max-width: 140px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    input {
+        max-width: 130px;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    input {
+        max-width: 120px;
+    }
+}
