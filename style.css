@@ -38,6 +38,16 @@ header h1 {
   background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  user-select: none; 
+   -webkit-user-select: none; 
+   -khtml-user-select: none; 
+   -moz-user-select: none; 
+   -ms-user-select: none;
+}
+
+::selection {
+  background-color: rgb(132, 0, 255);
+  color: white;
 }
 
 h1:after {
@@ -48,7 +58,7 @@ h1:after {
   background-color: #00000023;
   left: 10%;
   top: 15%;
-  animation: animate 5s linear
+  animation: animate 2s linear 5;
 }
 
 @keyframes animate {
